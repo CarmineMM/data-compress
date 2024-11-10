@@ -75,6 +75,8 @@ if (isset($_POST['action'])) {
 
     die();
 }
+
+$php_version = PHP_VERSION;
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -195,6 +197,9 @@ if (isset($_POST['action'])) {
                     <h5 class="text-center" style="margin-bottom: 0.2rem;">Espere...</h5>
                 </div>
             </form>
+            <div class="" style="font-size: 0.9rem;">
+                Version PHP: <?= $php_version ?>
+            </div>
         </section>
     </main>
 
